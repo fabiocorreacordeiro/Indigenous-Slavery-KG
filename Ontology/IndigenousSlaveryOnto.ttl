@@ -293,7 +293,6 @@ terms:description rdf:type owl:DatatypeProperty .
 ###  http://purl.org/ontology/bibo/abstract
 bibo:abstract rdf:type owl:DatatypeProperty ;
               rdfs:domain bibo:Thesis ;
-              rdfs:range rdfs:Literal ;
               rdfs:comment "A summary of the resource." ;
               rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
               rdfs:label "abstract" ;
