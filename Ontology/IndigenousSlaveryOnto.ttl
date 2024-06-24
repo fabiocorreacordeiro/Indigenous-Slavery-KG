@@ -675,33 +675,6 @@ bibo:fgiasson rdf:type owl:NamedIndividual ,
               rdfs:seeAlso "http://fgiasson.com/me/"^^xsd:anyURI .
 
 
-###  http://purl.org/ontology/bibo/degrees/ma
-degrees:ma rdf:type owl:NamedIndividual ,
-                    bibo:ThesisDegree ,
-                    owl:Thing ;
-           rdfs:comment "masters degree in arts"@en ;
-           rdfs:label "M.A."@en ;
-           ns:term_status "stable" .
-
-
-###  http://purl.org/ontology/bibo/degrees/ms
-degrees:ms rdf:type owl:NamedIndividual ,
-                    bibo:ThesisDegree ,
-                    owl:Thing ;
-           rdfs:comment "masters degree in science"@en ;
-           rdfs:label "M.S."@en ;
-           ns:term_status "stable" .
-
-
-###  http://purl.org/ontology/bibo/degrees/phd
-degrees:phd rdf:type owl:NamedIndividual ,
-                     bibo:ThesisDegree ,
-                     owl:Thing ;
-            rdfs:comment "PhD degree"@en ;
-            rdfs:label "PhD degree"@en ;
-            ns:term_status "stable" .
-
-
 ###  http://purl.org/ontology/bibo/status/accepted
 status:accepted rdf:type owl:NamedIndividual ,
                          owl:Thing ;

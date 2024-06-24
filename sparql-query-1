@@ -1,0 +1,28 @@
+#SELECT ?keyword (COUNT(DISTINCT ?thesis) AS ?ccount) 
+#WHERE {?thesis <http://purl.org/dc/terms/subject> ?keyword.
+#}
+
+#GROUP BY ?keyword  ORDER BY DESC(?ccount)
+#LIMIT 150
+
+#SELECT ?person (COUNT(DISTINCT ?thesis) AS ?ccount) 
+#WHERE {?thesis <http://purl.org/ontology/bibo/advisor> ?person.
+#}
+
+#GROUP BY ?person  ORDER BY DESC(?ccount)
+#LIMIT 150
+
+#SELECT ?org (COUNT(DISTINCT ?thesis) AS ?ccount) 
+#WHERE {?thesis <http://purl.org/dc/terms/publisher> ?org.
+#}
+
+#GROUP BY ?org  ORDER BY DESC(?ccount)
+#LIMIT 150
+
+SELECT ?area (COUNT(DISTINCT ?thesis) AS ?ccount) 
+WHERE {?thesis <http://purl.org/dc/terms/subject> ?area.
+       ?area rdf:type <http://purl.org/ontology/bibo/CNPQ>.
+}
+
+GROUP BY ?area  ORDER BY DESC(?ccount)
+LIMIT 150

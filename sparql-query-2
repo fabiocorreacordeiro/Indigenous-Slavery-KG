@@ -1,0 +1,7 @@
+#SELECT ?s 
+#WHERE {?s a <http://xmlns.com/foaf/0.1/Person>.
+#       ?s a <http://purl.obolibrary.org/obo/IAO_0000629> .}
+
+SELECT ?s 
+WHERE {?s a <http://xmlns.com/foaf/0.1/Organization>.
+       ?s a <http://purl.obolibrary.org/obo/IAO_0000629> .}
