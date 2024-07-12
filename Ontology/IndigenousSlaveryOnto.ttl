@@ -292,7 +292,6 @@ terms:description rdf:type owl:DatatypeProperty .
 
 ###  http://purl.org/ontology/bibo/abstract
 bibo:abstract rdf:type owl:DatatypeProperty ;
-              rdfs:domain bibo:Thesis ;
               rdfs:comment "A summary of the resource." ;
               rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
               rdfs:label "abstract" ;
@@ -562,6 +561,15 @@ bibo:Program rdf:type owl:Class ;
              skos:note "This property was created for this project."@en .
 
 
+###  http://purl.org/ontology/bibo/ReferenceSource
+bibo:ReferenceSource rdf:type owl:Class ;
+                     rdfs:subClassOf bibo:Document ;
+                     rdfs:comment "A document that presents authoritative reference information, such as a dictionary or encylopedia ."@en ;
+                     rdfs:isDefinedBy "http://purl.org/ontology/bibo/" ;
+                     rdfs:label "Reference Source"@en ;
+                     ns:term_status "unstable" .
+
+
 ###  http://purl.org/ontology/bibo/Subject
 bibo:Subject rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000629> ;
@@ -596,6 +604,14 @@ bibo:University rdf:type owl:Class ;
                 rdfs:label "Instituição de Pesquisa"@pt-br ,
                            "Research Institution"@en ;
                 skos:note "This property was created for this project."@en .
+
+
+###  http://purl.org/ontology/bibo/dbpedia
+bibo:dbpedia rdf:type owl:Class ;
+             rdfs:subClassOf bibo:ReferenceSource ;
+             rdfs:comment "The DBPEDIA page about one resource (Person, Organization, or Place)."@en ;
+             rdfs:label "DBPEDIA Page"@en ;
+             skos:note "This property was created for this project."@en .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#Resource
