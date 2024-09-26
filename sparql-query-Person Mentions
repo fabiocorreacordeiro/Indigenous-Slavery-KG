@@ -1,0 +1,8 @@
+SELECT ?person (COUNT(DISTINCT ?thesis) AS ?ccount)  
+WHERE {?thesis a <http://purl.org/ontology/bibo/Thesis>.
+       ?person a <http://xmlns.com/foaf/0.1/Person>.
+       ?thesis <https://schema.org/mentions> ?person.
+}
+
+GROUP BY ?person  ORDER BY DESC(?ccount)
+
