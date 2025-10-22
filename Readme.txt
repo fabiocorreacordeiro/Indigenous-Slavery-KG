@@ -10,4 +10,5 @@ Sequência dos scripts:
 
 (O ideal seria utilizer apenas uma base de dados para o grafo de conhecimento. No entanto, como um dos propósitos desse projeto foi ganhar experiência com diversas tecnologias, utilizamos Stardog para a modelagem da ontologia e seu povoamento com os dados da BDTD e o Neo4j para povoar o conteúdo das teses e implementar o GRaphRAG)
 * Importar ontologia para o Neo4j usando o Neosemantics toolkit
-* Web crawley para buscar os arquivos PDF em cada biblioteca
+* Web crawler para buscar os arquivos PDF em cada biblioteca, cada universidade possui um notebook similar mas com pequenas adaptacões demandadas por cada repositório institucional (em data/crawler_bibliotecas)
+* Os web crawlers fazem o download de cada arquivo PDF do repositório da universidade, extraem o texto de cada página, identificam as entidades pessoas e local, e carrega toda informacão extraída no NEO4J.
